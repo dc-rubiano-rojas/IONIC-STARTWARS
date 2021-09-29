@@ -1,0 +1,8 @@
+{
+  "name": "ionicStarWarsApp",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

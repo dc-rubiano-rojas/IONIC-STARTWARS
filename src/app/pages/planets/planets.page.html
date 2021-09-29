@@ -1,0 +1,13 @@
+<app-header titulo="Planets"></app-header>
+
+<ion-content>
+
+
+
+    <ion-list>
+        <ion-item button detail lines="inset" *ngFor='let planet of (planetas|async)?.results' (click)='irDetalle(planet)'>
+            <ion-label>{{planet.name}}</ion-label>
+        </ion-item>
+    </ion-list>
+
+</ion-content>

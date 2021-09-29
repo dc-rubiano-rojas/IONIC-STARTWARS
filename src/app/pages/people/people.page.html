@@ -1,0 +1,16 @@
+<app-header titulo="People"></app-header>
+
+<ion-content>
+
+    <ion-slide *ngIf="cargando">
+        <ion-spinner name="lines" color="tertiary"></ion-spinner>
+    </ion-slide>
+
+
+    <ion-list>
+        <ion-item button detail lines="inset" *ngFor='let person of people' (click)='mostrarDetalle(person)'>
+            {{person.name}}
+        </ion-item>
+    </ion-list>
+
+</ion-content>
